@@ -1,65 +1,33 @@
-# CPN WhatsApp Bot
+# 🐱 CAT CPN
 
-A WhatsApp bot built with Baileys.
+<p align="center">
+  <img src="./cat-cpn.png" alt="CAT CPN WhatsApp Bot" width="900">
+</p>
 
-## Features
+<p align="center">
+  <strong>A powerful WhatsApp bot built with Baileys</strong>
+</p>
 
-- Pair WhatsApp using a pairing code
-- Persistent authentication
-- Receive messages
-- Send messages
-- Automatic reconnect
-- Basic commands
+---
 
-## Requirements
+## 🤖 About CAT CPN
 
-- Node.js 20+
-- A WhatsApp account that you control
+CAT CPN is a WhatsApp bot that can pair with WhatsApp using a
+pairing code, receive messages, send messages, and automatically
+reconnect when the connection is interrupted.
 
-## Installation
+## ✨ Features
 
-Clone or download the repository, then run:
+- 📱 WhatsApp pairing-code authentication
+- 📥 Receive messages
+- 📤 Send and reply to messages
+- 🔄 Automatic reconnection
+- 💾 Persistent authentication
+- ⚡ Fast command handling
+- 🐱 CAT CPN branding
 
+## 🚀 Installation
+
+```bash
 npm install
-
-## Start
-
 npm start
-
-The bot will ask:
-
-Enter the WhatsApp phone number to pair:
-
-Enter the number with its country code.
-
-Example:
-
-254700000000
-
-Do not include the `+`.
-
-The bot will display a pairing code.
-
-On WhatsApp:
-
-Settings → Linked devices → Link a device → Link with phone number
-
-Enter the displayed code.
-
-## Commands
-
-!ping
-
-!menu
-
-!hello
-
-## Authentication
-
-The WhatsApp session is stored in:
-
-auth_info/
-
-Do not upload this directory to GitHub.
-
-It contains authentication credentials for the WhatsApp account.
