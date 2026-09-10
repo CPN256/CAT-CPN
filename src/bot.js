@@ -172,8 +172,38 @@ async function startBot() {
     }
 
     if (connection === 'open') {
-      console.log(paint('green', '\n  ✓ CAT CPN is connected to WhatsApp!'))
-      console.log(paint('cyan', '  ✓ Type .menu in WhatsApp to open the bot menu.'))
+  console.log('✅ CAT CPN connected to WhatsApp!')
+
+  // 👇 PUT THE WELCOME MESSAGE CODE HERE
+  const selfJid = sock.user?.id
+
+  if (!selfJid) {
+    console.log('⚠️ Could not find the bot WhatsApp JID.')
+    return
+  }
+
+  try {
+    await sock.sendMessage(selfJid, {
+      text: `👑 *CAT CPN — CONNECTED!*
+
+Hello! 👋 Welcome to CAT CPN.
+
+✅ WhatsApp account successfully paired
+⚡ Status: Online
+🤖 Bot: CAT CPN
+
+📋 Send *.menu* to view my commands.
+
+🚀 CAT CPN is ready!`
+    })
+
+    console.log('✅ Welcome message sent successfully!')
+  } catch (error) {
+    console.error('❌ Failed to send welcome message:', error)
+  }
+
+  // 👇 KEEP THE REST OF YOUR EXISTING CODE BELOW THIS
+    }
     }
 
     if (connection === 'close') {
