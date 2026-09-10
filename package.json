@@ -1,0 +1,20 @@
+{
+  "name": "cat-cpn",
+  "version": "7.0.0",
+  "private": true,
+  "description": "CAT CPN WhatsApp bot using the latest official Baileys release with Pterodactyl auto-install and pairing code login",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "install:bot": "npm install --no-audit --no-fund --prefer-online"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "pino": "9.7.0"
+  }
+}

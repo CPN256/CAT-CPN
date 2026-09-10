@@ -1,0 +1,16 @@
+CAT CPN — PTERODACTYL INSTALL FIX
+
+This build is designed for panels whose startup command is simply:
+    node src/index.js
+
+The entrypoint checks whether @whiskeysockets/baileys is installed. If it is missing, it:
+1. enables Git dependencies in the project npm config for older/newer npm compatibility;
+2. runs npm install --no-audit --no-fund --prefer-online;
+3. starts the actual bot only after installation succeeds.
+
+Latest official Baileys pinned by this build:
+    @whiskeysockets/baileys 7.0.0-rc14
+
+If installation still fails, the console will now print the full npm exit code and a clear diagnostic. Do not hide the npm error; send that output for diagnosis.
+
+Do not delete auth_info_baileys/ unless you intentionally want a fresh WhatsApp pairing.

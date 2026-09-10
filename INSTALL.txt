@@ -1,0 +1,14 @@
+CAT CPN — PTERODACTYL QUICK START
+
+1. Upload and extract this ZIP into the server root.
+2. Keep the startup command as:
+   node src/index.js
+3. Start the server.
+4. On a fresh session you should immediately see:
+   WhatsApp number:
+5. Enter the full WhatsApp number with country code, digits only.
+6. Enter the generated pairing code in WhatsApp > Linked Devices > Link with phone number.
+
+If the server already has auth_info_baileys/, CAT CPN will reuse that session and will not ask for a new number.
+
+If installation fails, the new installer prints the npm error directly above the failure message. That error is needed to diagnose network/DNS/permission problems.
