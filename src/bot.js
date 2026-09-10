@@ -204,7 +204,7 @@ Hello! 👋 Welcome to CAT CPN.
 
   // 👇 KEEP THE REST OF YOUR EXISTING CODE BELOW THIS
     }
-    }
+    })
 
     if (connection === 'close') {
       const code = lastDisconnect?.error?.output?.statusCode
