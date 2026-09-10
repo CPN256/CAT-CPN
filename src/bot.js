@@ -204,7 +204,7 @@ Hello! 👋 Welcome to CAT CPN.
 
   // 👇 KEEP THE REST OF YOUR EXISTING CODE BELOW THIS
     }
-    })
+    }
 
     if (connection === 'close') {
       const code = lastDisconnect?.error?.output?.statusCode
@@ -216,7 +216,6 @@ Hello! 👋 Welcome to CAT CPN.
       } else {
         console.log(paint('red', '  You have been logged out. Remove auth_info_baileys only if you intentionally want a fresh link.'))
       }
-    }
 
   })
 
